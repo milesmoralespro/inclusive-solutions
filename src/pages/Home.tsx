@@ -52,8 +52,8 @@ const Home: React.FC = () => {
                             <span className="intro__stat-label">Years Experience</span>
                         </div>
                         <div className="intro__stat">
-                            <span className="intro__stat-number">5</span>
-                            <span className="intro__stat-label">Advisory Verticals</span>
+                            <span className="intro__stat-number">100's</span>
+                            <span className="intro__stat-label">Satisfied Clients</span>
                         </div>
                         <div className="intro__stat">
                             <span className="intro__stat-number">100%</span>
