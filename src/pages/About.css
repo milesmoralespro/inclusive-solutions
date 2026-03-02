@@ -1,0 +1,122 @@
+.about-content {
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-lead {
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    margin-bottom: 16px;
+}
+
+/* Values list */
+.about-values {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 24px auto;
+    max-width: 400px;
+    text-align: left;
+}
+
+.about-values li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.about-values__check {
+    color: var(--gold);
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+/* Areas Grid */
+.about-areas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-area {
+    background: var(--light-grey);
+    border-radius: var(--radius-lg);
+    padding: 32px 28px;
+    border: 1px solid var(--medium-grey);
+    text-align: left;
+}
+
+.about-area h3 {
+    font-size: 1.15rem;
+    margin-bottom: 12px;
+}
+
+.about-area p {
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+/* Steps */
+.about-steps {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 24px auto;
+    max-width: 460px;
+    text-align: left;
+}
+
+.about-steps li {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.about-steps__num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: var(--gold);
+    color: var(--navy);
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 0.85rem;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+/* Note */
+.about-note {
+    font-style: italic;
+    color: var(--text-muted);
+    margin-top: 24px;
+}
+
+/* Commitment */
+.about-commitment {
+    padding-top: 16px;
+}
+
+.about-commitment h2 {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .about-areas {
+        grid-template-columns: 1fr;
+    }
+}

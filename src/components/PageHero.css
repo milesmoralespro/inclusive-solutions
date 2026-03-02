@@ -1,0 +1,29 @@
+.page-hero {
+    background: var(--navy);
+    padding: 130px 0 60px;
+    text-align: center;
+}
+
+.page-hero__title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--white);
+    margin-bottom: 12px;
+}
+
+.page-hero__subtitle {
+    font-size: 1.05rem;
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 560px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .page-hero {
+        padding: 100px 0 40px;
+    }
+
+    .page-hero__title {
+        font-size: 1.8rem;
+    }
+}

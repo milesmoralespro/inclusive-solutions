@@ -1,0 +1,224 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: var(--navy);
+    transition: all var(--transition-base);
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.header--scrolled {
+    background: var(--navy-dark);
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.25);
+    height: 70px;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* Logo */
+.header__logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header__logo-img {
+    height: auto;
+    width: 300px;
+    max-height: 70px;
+    object-fit: cover;
+    filter: brightness(0) invert(1);
+    transition: opacity var(--transition-fast);
+}
+
+.header__logo-img:hover {
+    opacity: 0.85;
+}
+
+/* Desktop Nav */
+.header__menu {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    list-style: none;
+}
+
+.header__menu-item {
+    position: relative;
+}
+
+.header__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 8px 16px;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-fast);
+}
+
+.header__link:hover {
+    color: var(--white);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.header__link--active {
+    color: var(--gold);
+}
+
+.header__caret {
+    font-size: 0.65rem;
+    opacity: 0.6;
+}
+
+/* Dropdown */
+.header__dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 220px;
+    background: var(--white);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+    padding: 8px 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+    transition: all var(--transition-fast);
+    list-style: none;
+}
+
+.header__menu-item--dropdown:hover .header__dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.header__dropdown-link {
+    display: block;
+    padding: 10px 20px;
+    font-size: 0.88rem;
+    color: var(--text-dark);
+    text-decoration: none;
+    transition: all var(--transition-fast);
+}
+
+.header__dropdown-link:hover {
+    background: var(--light-grey);
+    color: var(--gold-dark);
+}
+
+.header__dropdown-link--active {
+    color: var(--gold-dark);
+    font-weight: 600;
+}
+
+/* Hamburger */
+.header__hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    z-index: 1001;
+}
+
+.header__hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--white);
+    border-radius: 2px;
+    transition: all var(--transition-base);
+}
+
+.header__hamburger--open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.header__hamburger--open span:nth-child(2) {
+    opacity: 0;
+}
+
+.header__hamburger--open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .header__hamburger {
+        display: flex;
+    }
+
+    .header__nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        background: var(--navy-dark);
+        padding: 80px 24px 32px;
+        transition: right var(--transition-base);
+        overflow-y: auto;
+    }
+
+    .header__nav--open {
+        right: 0;
+    }
+
+    .header__menu {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    .header__menu-item {
+        width: 100%;
+    }
+
+    .header__link {
+        width: 100%;
+        padding: 12px 0;
+        font-size: 1rem;
+    }
+
+    .header__dropdown {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        background: transparent;
+        box-shadow: none;
+        padding: 0 0 8px 16px;
+    }
+
+    .header__dropdown-link {
+        color: rgba(255, 255, 255, 0.7);
+        padding: 8px 0;
+    }
+
+    .header__dropdown-link:hover {
+        background: transparent;
+        color: var(--gold);
+    }
+
+    .header__dropdown-link--active {
+        color: var(--gold);
+    }
+}
