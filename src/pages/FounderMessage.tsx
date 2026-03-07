@@ -15,11 +15,10 @@ const FounderMessage: React.FC = () => {
 
             <SectionWrapper bg="white">
                 <div className="founder">
-                    <div className="founder__quote-mark">"</div>
                     <blockquote className="founder__blockquote">
-                        In financial and compliance matters, precision matters. Advisory services must be
+                        <span style={{ fontSize: '1.5em', color: 'var(--gold)', lineHeight: 1 }}>"</span>In financial and compliance matters, precision matters. Advisory services must be
                         guided by integrity, transparency, and a deep commitment to structured processes
-                        that create lasting value.
+                        that create lasting value.<span style={{ fontSize: '1.5em', color: 'var(--gold)', lineHeight: 1 }}>"</span>
                     </blockquote>
 
                     <div className="founder__body">

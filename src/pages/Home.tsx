@@ -154,11 +154,10 @@ const Home: React.FC = () => {
                 </div>
                 <div className="founder-preview">
                     <div className="founder-preview__quote">
-                        <span className="founder-preview__mark">"</span>
                         <blockquote>
-                            In financial and compliance matters, precision matters. Our advisory services
+                            <span style={{ fontSize: '1.5em', color: 'var(--gold)', lineHeight: 1 }}>"</span>In financial and compliance matters, precision matters. Our advisory services
                             are built on the belief that clarity, integrity, and structured processes
-                            create lasting value for every client we serve.
+                            create lasting value for every client we serve.<span style={{ fontSize: '1.5em', color: 'var(--gold)', lineHeight: 1 }}>"</span>
                         </blockquote>
                     </div>
                     <p className="founder-preview__attr">— Founder, Inclusive Solutions</p>
