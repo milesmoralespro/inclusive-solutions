@@ -42,6 +42,30 @@
     color: var(--gold);
 }
 
+.footer__socials {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.footer__socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.footer__socials a:hover {
+    background-color: var(--gold);
+    transform: translateY(-3px);
+}
+
 /* Columns */
 .footer__heading {
     font-family: var(--font-heading);
