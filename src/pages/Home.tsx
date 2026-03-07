@@ -101,7 +101,10 @@ const Home: React.FC = () => {
             <SectionWrapper bg="white" id="why-us">
                 <div className="why-us">
                     <div className="section-header">
-                        <h2>Integrity. Structure. Transparency.</h2>
+                        <h2>Why Inclusive Solutions</h2>
+                        <p className="why-us__subtitle" style={{ fontSize: '1.2rem', color: 'var(--gold)', fontWeight: 600, marginTop: '8px' }}>
+                            Integrity. Structure. Transparency.
+                        </p>
                     </div>
                     <div className="why-us__content">
                         <ul className="why-us__list">
@@ -114,11 +117,8 @@ const Home: React.FC = () => {
                         <div className="why-us__text">
                             <p>
                                 We operate with professional accountability and clarity. Our focus remains on
-                                delivering structured advisory support rather than transactional solutions.
-                            </p>
-                            <p>
-                                Each engagement is approached with diligence and transparent communication,
-                                ensuring regulatory alignment at every step.
+                                delivering structured advisory support rather than transactional solutions. Each
+                                engagement is approached with diligence and transparent communication.
                             </p>
                         </div>
                     </div>
@@ -149,6 +149,9 @@ const Home: React.FC = () => {
 
             {/* ── SECTION 6: FOUNDER PREVIEW ── */}
             <SectionWrapper bg="white" id="founder">
+                <div className="section-header">
+                    <h2>Founder's Message</h2>
+                </div>
                 <div className="founder-preview">
                     <div className="founder-preview__quote">
                         <span className="founder-preview__mark">"</span>
