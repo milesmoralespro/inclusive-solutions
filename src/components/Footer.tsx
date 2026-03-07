@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaLinkedinIn, FaTwitter, FaFacebookF, FaInstagram } from 'react-icons/fa';
+import { FaLinkedinIn, FaTwitter, FaFacebookF, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import './Footer.css';
 
 const Footer: React.FC = () => {
@@ -20,6 +20,9 @@ const Footer: React.FC = () => {
                             <strong>Inclusive Trading and Finance Private Limited</strong>
                         </p>
                         <div className="footer__socials">
+                            <a href="https://wa.me/919000000000" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                                <FaWhatsapp />
+                            </a>
                             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                                 <FaLinkedinIn />
                             </a>
